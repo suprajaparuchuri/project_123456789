@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="q_body">
+    <h1 class="q_h1">Queries</h1>
+    <div class="queries_div">
+        <form action="/execute_queryy19" method="post">
+            <ul>
+                <li><button  class="q_btn" name="query2" type="submit" value="list_y19_students"  class="button">List of Y19 batch IT students, who passed all the courses in the first attempt?</button></li>
+                <li><button  class="q_btn" name="query2" value="list_students_with_backlogs" class="button">List of students with backlogs</button></li>
+                <li><button  class="q_btn" name="query2" value="negative_trend_backlogs" class="button">Students whose backlogs follow a negative trend (decreasing order)</button></li>
+                <li><button  class="q_btn" name="query2" value="positive_trend_backlogs" class="button">Students whose backlogs follow a positive trend (increasing order)</button></li>
+                <li><button  class="q_btn" name="query2" value="negative_trend_sgpa" class="button">Students whose SGPA follows a negative trend (decreasing order)</button></li>
+                 <li><button  class="q_btn" name="query2" value="positive_trend_sgpa" class="button">Students whose SGPA follows a positive trend (increasing order)</button></li>
+                <li><button  class="q_btn" name="query2" value="top_k_cgpa" class="button">List of Top – K students as per CGPA</button></li>
+                <li><button  class="q_btn"  name="query2" value="students_percentage_gt_75" class="button">List of Students whose percentage is greater than 75%</button></li>
+                <li><button  class="q_btn"  name="query2" value="students_percentage_gt_75 who is male" class="button">List of Students whose percentage is greater than 75%  who are male</button></li>
+                <li><button  class="q_btn"  name="query2" value="students_percentage_gt_75 who is female" class="button">List of Students whose percentage is greater than 75%  who are female</button></li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

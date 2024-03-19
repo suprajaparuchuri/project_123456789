@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dept.css') }}">
+    <title>Department</title>
+</head>
+<body>
+    <form action="" method="POST"> <!-- Added method="POST" for form submission -->
+        <div>
+            <select name="Department" id="dept">
+                <option value="IT">IT</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EIE">EIE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECHANICAL">MECHANICAL</option>
+                <option value="CB & DS">CB & DS</option>
+            </select>
+        </div>
+        <div>
+            <select name="Regulations" id="reg">
+                <option value="R18">R18</option>
+                <option value="R19">R19</option>
+                <option value="R20">R20</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit" class="btn">Submit</button> <!-- Changed button type to submit -->
+        </div>
+    </form>
+</body>
+</html>

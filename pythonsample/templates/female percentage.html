@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perecentage greater than 75 who is female</title>
+    <style>
+        /* CSS styles for tables */
+        table {
+
+            width: 100%;
+            margin-bottom: 20px; /* Add some space between tables */
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Align table data (td) with their headings (th) */
+        td:first-child, th:first-child {
+            text-align: center;
+        }
+
+        td:nth-child(2), th:nth-child(2) {
+            text-align: center;
+        }
+
+        td:nth-child(3), th:nth-child(3) {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>percentage greater than 75 who is female</h1>
+
+    <!-- First table -->
+    <div class="result">
+        <table>
+            <thead>
+                <tr>
+                    <th>Regdno</th>
+                    <th>Name</th>
+                    <th>Percentage</th>
+                    <th>Gender</th>
+                    <!-- Add the corresponding data for the backlogs count here if applicable -->
+                </tr>
+            </thead>
+            <tbody>
+                {% if results8 %}
+                    {% for row in results8 %}
+                        <tr>
+                            <td>{{ row[0] }}</td>
+                            <td>{{ row[1] }}</td>
+                            <td>{{ row[2] }}</td>
+                            <td>{{ row[3] }}</td>
+                            <!-- Add more columns if needed -->
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
